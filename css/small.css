@@ -13,13 +13,24 @@ body {
     font-family: 'Oxygen', sans-serif;
 }
 
+.preContent {
+    grid-area: preContent;
+    text-align: center;
+}
+
+main {
+    grid-area: main;
+}
+
 .container {
     display: grid;
+    grid-template-columns: repeat(7, 1fr);
     grid-template-areas: 
-        "header header header header header"
-        "nav nav nav nav nav"
-        "main main main main main"
-        "footer footer footer footer footer"
+        "header header header header header header header"
+        "nav nav nav nav nav nav nav"
+        "preContent preContent preContent preContent preContent preContent preContent"
+        "main main main main main main main"
+        "footer footer footer footer footer footer footer"
 }
 
 #logo {
@@ -37,13 +48,15 @@ header, footer {
     text-shadow: 1px 1px black;
 }
 .header {
-    margin-bottom: 0px;
+    grid-area: header;
+    margin-bottom: 1px;
 }
 .footer {
-    margin-top: 20px;
+    grid-area: footer;
     padding-top: 10px;
     min-height: 3em;
     font-size: 0.85em;
+    margin-top: 1px;
 }
 
 #pageTitleDiv {
@@ -55,6 +68,10 @@ header, footer {
     padding-top: 15px;
 }
 
+nav {
+    grid-area: nav;
+    background-color: #42384F;
+}
 .nav-div-link {
     display: block;
     float: left;
@@ -64,8 +81,8 @@ header, footer {
     background-color: #42384F;
     color: white;
     margin: 0;
-    padding-top: 5px;
-    margin-top: 1px;
+    padding-top: 10px;
+    padding-bottom: 30px;
 }
 .nav-div-link:hover {
     background-color: rgb(92, 65, 67);
@@ -106,11 +123,6 @@ header, footer {
     min-height: 20px;
 }
 
-p {
-    font-size: 0.85em;
-    margin-left: 8px;
-}
-
 /* ----- tablet view (37.5 em) -------------------------- */
 @media only screen and (min-width: 37.5em) {
 
@@ -127,4 +139,16 @@ p {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     } 
+
+    .container {
+        grid-template-areas: 
+            "header header header header header header header"
+            "nav preContent preContent preContent preContent preContent preContent"
+            "nav main main main main main main"
+            "footer footer footer footer footer footer footer"
+    }
+
+    .nav-div-link {
+        width: 100%;
+    }
 }
