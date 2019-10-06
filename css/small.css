@@ -14,7 +14,7 @@ body {
 }
 
 .preContent {
-    grid-area: preContent;
+    grid-template-areas: preContent;
     text-align: center;
 }
 
@@ -48,11 +48,11 @@ header, footer {
     text-shadow: 1px 1px black;
 }
 .header {
-    grid-area: header;
+    grid-template-areas: header;
     margin-bottom: 1px;
 }
 .footer {
-    grid-area: footer;
+    grid-template-areas: footer;
     padding-top: 10px;
     min-height: 3em;
     font-size: 0.85em;
@@ -69,7 +69,7 @@ header, footer {
 }
 
 nav {
-    grid-area: nav;
+    grid-template-areas: nav;
     background-color: #42384F;
 }
 .nav-div-link {
