@@ -13,15 +13,6 @@ body {
     font-family: 'Oxygen', sans-serif;
 }
 
-.preContent {
-    grid-area: preContent;
-    text-align: center;
-}
-
-.main {
-    grid-area: main;
-}
-
 .container {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -31,6 +22,15 @@ body {
         "preContent preContent preContent preContent preContent preContent preContent"
         "main main main main main main main"
         "footer footer footer footer footer footer footer"
+}
+
+.preContent {
+    grid-area: preContent;
+    text-align: center;
+}
+
+.main {
+    grid-area: main;
 }
 
 #logo {
