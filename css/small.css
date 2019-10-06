@@ -16,10 +16,10 @@ body {
 .container {
     display: grid;
     grid-template-areas: 
-        "header"
-        "nav"
-        "main"
-        "footer"
+        "header header header header header"
+        "nav nav nav nav nav"
+        "main main main main main"
+        "footer footer footer footer footer"
 }
 
 #logo {
