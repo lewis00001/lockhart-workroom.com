@@ -14,11 +14,11 @@ body {
 }
 
 .preContent {
-    grid-template-areas: preContent;
+    grid-area: preContent;
     text-align: center;
 }
 
-main {
+.main {
     grid-area: main;
 }
 
@@ -48,11 +48,11 @@ header, footer {
     text-shadow: 1px 1px black;
 }
 .header {
-    grid-template-areas: header;
+    grid-area: header;
     margin-bottom: 1px;
 }
 .footer {
-    grid-template-areas: footer;
+    grid-area: footer;
     padding-top: 10px;
     min-height: 3em;
     font-size: 0.85em;
@@ -68,8 +68,8 @@ header, footer {
     padding-top: 15px;
 }
 
-nav {
-    grid-template-areas: nav;
+.nav-div {
+    grid-area: nav;
     background-color: #42384F;
 }
 .nav-div-link {
