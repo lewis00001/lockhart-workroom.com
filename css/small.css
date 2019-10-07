@@ -7,21 +7,30 @@
 /* ----- baseline view ----------------------------------- */
 * {box-sizing: border-box;}
 
+html {
+    background-color: rgb(224, 224, 224);
+}
+
 body {
     padding: 0;
     margin: 0;
     font-family: 'Oxygen', sans-serif;
+    background-color: white;
+    min-width: 420px;
+    max-width: 1200px;
+    display: block;
+    margin: auto;
 }
 
 .container {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-areas: 
-        "header header header header header header header"
-        "nav nav nav nav nav nav nav"
-        "preContent preContent preContent preContent preContent preContent preContent"
-        "main main main main main main main"
-        "footer footer footer footer footer footer footer"
+        "logo header header header header"
+        "nav nav nav nav nav"
+        "preContent preContent preContent preContent preContent"
+        "main main main main main"
+        "footer footer footer footer footer"
 }
 
 .preContent {
@@ -37,8 +46,13 @@ body {
     width: 100px;
     display: block;
     margin: auto;
-    float: left;
     padding: 8px;
+}
+.logo {
+    display: grid;
+    grid-area: logo;
+    width: 100%;
+    background-color: white;
 }
 
 header, footer {
@@ -50,6 +64,7 @@ header, footer {
 .header {
     grid-area: header;
     margin-bottom: 1px;
+    display: block;
 }
 .footer {
     grid-area: footer;
@@ -83,9 +98,13 @@ header, footer {
     margin: 0;
     padding-top: 10px;
     padding-bottom: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .nav-div-link:hover {
     background-color: rgb(92, 65, 67);
+}
+#home {
+    font-weight: bold;
 }
 
 .content {
@@ -97,31 +116,27 @@ header, footer {
 
 .card {
     display: block;
-    border: 1px solid black;
+}
+
+.quoteMarks {
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+}
+.quotes {
+    line-height: 1.5em;
+    font-size: larger;
+    margin: 20px;
+}
+.qName {
+    color: #454F38;
+    font-weight: bold;
+    font-size: small;
+    float: right;
 }
 
  #authorInfo {
     padding-bottom: 10px;
  }
-
- .cardBanner {
-    background-color: #421f1e;
-    padding: 4px;
-    padding-left: 6px;
-    color: white;
- }
-.cardBody {
-    width: 98%;
-    display: block;
-    margin: auto;
-}
-.cardImage {
-    border: 1px solid black;
-    display: block;
-    margin: auto;
-    max-width: 95%;
-    min-height: 20px;
-}
 
 /* ----- tablet view (37.5 em) -------------------------- */
 @media only screen and (min-width: 37.5em) {
@@ -141,14 +156,19 @@ header, footer {
     } 
 
     .container {
+        grid-template-columns: repeat(6, 1fr);
         grid-template-areas: 
-            "header header header header header header header"
-            "nav preContent preContent preContent preContent preContent preContent"
-            "nav main main main main main main"
-            "footer footer footer footer footer footer footer"
+            "logo header header header header header"
+            "nav preContent preContent preContent preContent preContent"
+            "nav main main main main main"
+            "footer footer footer footer footer footer"
     }
 
     .nav-div-link {
         width: 100%;
+    }
+
+    .logo {
+        max-width: 100%;
     }
 }
