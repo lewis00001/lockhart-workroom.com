@@ -96,7 +96,6 @@ header, footer {
     height: 30px;
     text-align: center;
     background-color: #42384F;
-    color: white;
     margin: 0;
     padding-top: 10px;
     padding-bottom: 30px;
@@ -104,6 +103,10 @@ header, footer {
 }
 .nav-div-link:hover {
     background-color: rgb(92, 65, 67);
+}
+.nav-div-link > a {
+    color: white;
+    text-decoration: none;
 }
 #home {
     font-weight: bold;
