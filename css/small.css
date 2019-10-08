@@ -30,7 +30,6 @@ body {
     grid-template-areas: 
         "logo header header header header"
         "nav nav nav nav nav"
-        "preContent preContent preContent preContent preContent"
         "main main main main main"
         "footer footer footer footer footer"
 }
@@ -164,7 +163,6 @@ header, footer {
         grid-template-columns: repeat(6, 1fr);
         grid-template-areas: 
             "logo header header header header header"
-            "nav preContent preContent preContent preContent preContent"
             "nav main main main main main"
             "footer footer footer footer footer footer"
     }
