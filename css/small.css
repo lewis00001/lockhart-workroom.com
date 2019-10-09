@@ -27,6 +27,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 130px 20px auto 20px;
     grid-template-areas: 
         "logo header header header header"
         "nav nav nav nav nav"
@@ -161,6 +162,7 @@ header, footer {
 
     .container {
         grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 130px auto 40px;
         grid-template-areas: 
             "logo header header header header header"
             "nav main main main main main"
