@@ -142,38 +142,3 @@ header, footer {
  #authorInfo {
     padding-bottom: 10px;
  }
-
-/* ----- tablet view (37.5 em) -------------------------- */
-@media only screen and (min-width: 37.5em) {
-
-    .content {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* ----- Desktop view (60 em) -------------------------- */
-@media only screen and (min-width: 60em) {
-
-    .content {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    } 
-
-    .container {
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: 130px auto 40px;
-        grid-template-areas: 
-            "logo header header header header header"
-            "nav main main main main main"
-            "footer footer footer footer footer footer"
-    }
-
-    .nav-div-link {
-        width: 100%;
-    }
-
-    .logo {
-        max-width: 100%;
-    }
-}
