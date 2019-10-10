@@ -35,11 +35,6 @@ body {
         "footer footer footer footer footer"
 }
 
-.preContent {
-    grid-area: preContent;
-    text-align: center;
-}
-
 .main {
     grid-area: main;
 }
@@ -141,4 +136,19 @@ header, footer {
 
  #authorInfo {
     padding-bottom: 10px;
+ }
+
+ .logoAlign {
+     display: block;
+     margin: auto;
+ }
+ .socialLogo {
+     display: block;
+     margin: auto;
+     float: left;
+ }
+ .socialLogo > a > img {
+     width: 85px;
+     display: block;
+     margin: 20px;
  }
