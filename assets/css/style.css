@@ -13,10 +13,12 @@ hr {
     position: absolute;
     top: 0;
     left: 0;
+    display: block;
+    padding: 1em;
 }
 
-.i-wrapper {
-    padding: 1em;
+.main {
+    display: block;
 }
 
 .header {
@@ -106,7 +108,10 @@ hr {
     margin-bottom: 1em;
 }
 
-.link-1, .link-2, .link-3, .link-4 {
+.link-1,
+.link-2,
+.link-3,
+.link-4 {
     width: 18%;
     display: flex;
     flex-direction: column;
@@ -118,45 +123,127 @@ hr {
 
 .link-1:hover {
     z-index: 2;
-}  
+}
+
 .link-1:hover .dash {
     background-color: white;
     box-shadow: 0 -12px 20px white;
-} 
+}
+
 .link-1:hover .dash-text {
     z-index: 2;
 }
 
 .link-2:hover {
     z-index: 2;
-}  
+}
+
 .link-2:hover .dash {
     background-color: white;
     box-shadow: 0 -12px 20px white;
-} 
+}
+
 .link-2:hover .dash-text {
     z-index: 2;
 }
 
 .link-3:hover {
     z-index: 2;
-}  
+}
+
 .link-3:hover .dash {
     background-color: white;
     box-shadow: 0 -12px 20px white;
-} 
+}
+
 .link-3:hover .dash-text {
     z-index: 2;
 }
 
 .link-4:hover {
     z-index: 2;
-}  
+}
+
 .link-4:hover .dash {
     background-color: white;
     box-shadow: 0 -12px 20px white;
-} 
+}
+
 .link-4:hover .dash-text {
     z-index: 2;
 }
 
+.work {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.work-img {
+    box-shadow: 0 0 4px 1px black;
+    width: 100%;
+    height: 150px;
+    margin: 10px;
+    position: relative;
+    border-radius: 20px 0 20px 0;
+    background-size:     cover;                     
+    background-repeat:   no-repeat;
+    background-position: center 0;
+    filter: grayscale(0.7);
+}
+
+.bloom {
+    opacity: 1.0;
+    animation-name: picBloom;
+    animation-duration: 2s;
+}
+
+@keyframes picBloom {
+    from {
+        opacity: 0.0;
+    }
+
+    to {
+        opacity: 1.0;
+    }
+}
+
+.w-title {
+    position: absolute;
+    top: 45%;
+    height: 50px;
+    padding: 5px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    filter: opacity(0.8);
+}
+
+.section-title {
+    color: white;
+    text-shadow: 0 0 6px white, 0 0 14px white;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.1em;
+    padding-bottom: 10px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+@media only screen and (min-width: 415px) {
+
+    .work-img {
+        box-shadow: 0 0 4px 1px black;
+        width: 300px; 
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+}
