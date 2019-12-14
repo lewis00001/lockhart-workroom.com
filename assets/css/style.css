@@ -67,7 +67,7 @@ hr {
 
 .links {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     position: relative;
     padding: 0 1em 0 1em;
     top: -2em;
@@ -89,7 +89,7 @@ hr {
 
 .dash {
     background-color: gray;
-    height: 0.6em;
+    height: 0.7em;
     width: 100%;
     margin-top: 0.8em;
     display: flex;
@@ -113,13 +113,13 @@ hr {
 .link-2,
 .link-3,
 .link-4 {
-    width: 18%;
     display: flex;
     flex-direction: column;
-    align-content: center;
     position: relative;
     z-index: 0;
     cursor: pointer;
+    max-width: 70px;
+    min-width: 60px;
 }
 
 .link-1:hover {
@@ -189,10 +189,16 @@ hr {
     margin: 10px;
     position: relative;
     border-radius: 20px 0 20px 0;
-    background-size:     cover;                     
-    background-repeat:   no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center 0;
     filter: grayscale(0.7);
+}
+
+.work-img:hover {
+    box-shadow: 0 0 6px 1px white;
+    filter: grayscale(0.3);
+    cursor: pointer;
 }
 
 .bloom {
@@ -238,13 +244,77 @@ hr {
     display: block;
     width: 100%;
     text-align: center;
+    font-size: 18px;
+}
+
+.modal {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    z-index: 99;
+}
+
+.modal-inner {
+    margin: 80px auto auto auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 650px;
+}
+
+.modal-img {
+    width: 250px;
+    box-shadow: 0 0 6px 1px white;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fas {
+    color: white;
+}
+
+.fas:hover {
+    text-shadow: 0 0 6px white;
+}
+
+.close-modal {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.close-modal i {
+    padding: 15px 20px 10px 10px;
+    cursor: pointer;
+}
+
+.modal-nav {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+.next-btn {
+    cursor: pointer;
 }
 
 @media only screen and (min-width: 675px) {
 
     .work-img {
         box-shadow: 0 0 4px 1px black;
-        width: 45%; 
+        width: 45%;
     }
 
     .header {
@@ -260,22 +330,36 @@ hr {
     .links {
         width: 360px;
     }
+
+    .section-title {
+        margin-bottom: 10px;
+    }
+
+    .modal-inner {
+        border: 1px solid white;
+        border-radius: 20px;
+    }
 }
 
 @media only screen and (min-width: 850px) {
-    
+
     .work-img {
         width: 28%;
+    }
+
+    .section-title {
+        font-size: 20px;
+        margin-bottom: 15px;
     }
 }
 
 @media only screen and (min-width: 1000px) {
-    
+
     .work-img {
         max-width: 320px;
     }
 
-    .i-wrapper, 
+    .i-wrapper,
     .main {
         max-width: 1005px;
         margin: auto;

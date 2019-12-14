@@ -2,6 +2,7 @@ $(document).ready( function () {
 
     // hid all content to start
     $(".work, .bio, .contact, .tools").hide();
+    $(".modal").hide();
 
     //
     $("#work").on("click", function () {
@@ -44,5 +45,23 @@ $(document).ready( function () {
         $(".tools").prepend("<div class='section-title bloom'>helpful tools</div>");
     });
 
+    // listens for which work is clicked on / calls modal
+    $(document).on("click", ".work-img", function (event) {
+        let chosen = $(this).html();
+        let chosenName = $(chosen).text();
+        workModal(chosenName);
+    });
+
+    // work info modal
+    function workModal(name) {
+        $(".modal").show();
+        let modalInfo;
+        for (let i = 0; i < myWork.w.length; i++) {
+            if (myWork.w[i].name === name) {
+                modalInfo = myWork.w[i];
+                $(".modal-content").html("<img class='modal-img' src='" + modalInfo.image + "'>");
+            }
+        }
+    }
 
 });
