@@ -244,11 +244,12 @@ hr {
 
     .work-img {
         box-shadow: 0 0 4px 1px black;
-        width: 300px; 
+        width: 45%; 
     }
 
     .header {
         display: flex;
+        height: 7em;
         justify-content: flex-end;
     }
 
@@ -261,6 +262,22 @@ hr {
     }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 850px) {
+    
+    .work-img {
+        width: 28%;
+    }
+}
 
+@media only screen and (min-width: 1000px) {
+    
+    .work-img {
+        max-width: 320px;
+    }
+
+    .i-wrapper, 
+    .main {
+        max-width: 1005px;
+        margin: auto;
+    }
 }
