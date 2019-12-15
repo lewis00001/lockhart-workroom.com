@@ -1,13 +1,30 @@
-$(document).ready( function () {
+$(document).ready(function () {
 
-    // hid all content to start
-    $(".work, .bio, .contact, .tools").hide();
     $(".modal").hide();
+    
+    homeScreen();
+    // loads homescreen when link is clicked
+    $("#home").on("click", function () {
+        homeScreen();
+    });
+
+    // home screen on load
+    function homeScreen() {
+        $(".home").html("");
+        $(".link-1, .link-2, .link-3, .link-4").removeClass("active-link");
+        $(".link-0").addClass("active-link");
+        $(".bio, .work, .contact, .tools").hide();
+        $(".home").show();
+
+        $(".home").prepend("<div class='section-title bloom'>about lewis</div>");
+    }
 
     // creates all the project cards on the recent work page
     $("#work").on("click", function () {
         $(".work").html("");
-        $(".bio, .contact, .tools").hide();
+        $(".link-0, .link-2, .link-3, .link-4").removeClass("active-link");
+        $(".link-1").addClass("active-link");
+        $(".home, .bio, .contact, .tools").hide();
         $(".work").show();
         for (let i = 0; i < myWork.w.length; i++) {
             $("<div/>", {
@@ -21,27 +38,33 @@ $(document).ready( function () {
     //
     $("#bio").on("click", function () {
         $(".bio").html("");
-        $(".work, .contact, .tools").hide();
+        $(".link-0, .link-1, .link-3, .link-4").removeClass("active-link");
+        $(".link-2").addClass("active-link");
+        $(".home, .work, .contact, .tools").hide();
         $(".bio").show();
-        
+
         $(".bio").prepend("<div class='section-title bloom'>biography</div>");
     });
 
     //
     $("#contact").on("click", function () {
         $(".contact").html("");
-        $(".work, .bio, .tools").hide();
+        $(".link-0, .link-1, .link-2, .link-4").removeClass("active-link");
+        $(".link-3").addClass("active-link");
+        $(".home, .work, .bio, .tools").hide();
         $(".contact").show();
-        
+
         $(".contact").prepend("<div class='section-title bloom'>contact me</div>");
     });
 
     //
     $("#tools").on("click", function () {
         $(".tools").html("");
-        $(".work, .bio, .contact").hide();
+        $(".link-0, .link-1, .link-2, .link-3").removeClass("active-link");
+        $(".link-4").addClass("active-link");
+        $(".home, .work, .bio, .contact").hide();
         $(".tools").show();
-        
+
         $(".tools").prepend("<div class='section-title bloom'>helpful tools</div>");
     });
 
@@ -83,7 +106,7 @@ $(document).ready( function () {
 
     // work info modal
     function workModal(name) {
-        $(".modal").show();                
+        $(".modal").show();
         $(".modal-links").html("");
         let modalInfo;
         for (let i = 0; i < myWork.w.length; i++) {

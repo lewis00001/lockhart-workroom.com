@@ -134,6 +134,7 @@ a {
     margin-bottom: 1em;
 }
 
+.link-0,
 .link-1,
 .link-2,
 .link-3,
@@ -143,8 +144,24 @@ a {
     position: relative;
     z-index: 0;
     cursor: pointer;
-    max-width: 70px;
-    min-width: 60px;
+    width: 50px;
+}
+
+.active-link {
+    z-index: 2;
+}
+
+.link-0:hover {
+    z-index: 2;
+}
+
+.link-0:hover .dash {
+    background-color: white;
+    box-shadow: 0 -12px 20px white;
+}
+
+.link-0:hover .dash-text {
+    z-index: 2;
 }
 
 .link-1:hover {
@@ -408,7 +425,7 @@ a {
     }
 
     .links {
-        width: 360px;
+        width: 370px;
     }
 
     .section-title {
@@ -422,6 +439,13 @@ a {
 
     .modal-img {
         width: 350px;
+    }
+}
+
+@media only screen and (min-width: 740px) {
+
+    .links {
+        width: 450px;
     }
 }
 
