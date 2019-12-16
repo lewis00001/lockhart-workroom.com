@@ -30,5 +30,19 @@ let quotes = {
             "He brings a focused energy and excitement to the team that is really hard to find.",
             source: "Nathan | States Title"
         }
+    ],
+    bio: [
+        "I am looking for an entry-level position as a full-stack web developer or a QAA engineer. I've spent " + 
+        "the last six years working at a SaaS company called Simplifile where we provide e-recording services " + 
+        "for documents such as deeds and mortgages.",
+
+        "I began at Simplifile as part of the customer support team and after a year was promoted to the role of " +
+        "team lead. From there I joined the quality assurance team where I've served as a test engineer for the " +
+        "past two years. I work closely with our developers and product managers in a Scrum environment, deploying " +
+        "frequent enhancements and bug fixes.",
+
+        "I have a background in art and graphic design and seamlessly incorporate this with my love of logic and " + 
+        "systems. In my off time I enjoy creating board games, video games, coded alphabets, and tinkering with my " +
+        "laser cutter and cnc machines."
     ]
 }

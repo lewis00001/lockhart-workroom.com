@@ -52,7 +52,9 @@ $(document).ready(function () {
         $(".link-2").addClass("active-link");
         $(".home, .work, .contact, .tools").hide();
         $(".bio").show();
-
+        for (let i = 0; i < quotes.bio.length; i++) {
+            $(".bio").append("<div class='bio-text bloom'>" + quotes.bio[i] + "</div>");
+        }
         $(".bio").prepend("<div class='section-title bloom'>biography</div>");
     });
 

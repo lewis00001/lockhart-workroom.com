@@ -44,13 +44,20 @@ body {
 }
 
 /* home screen */
-.home {
+.home, 
+.bio-text {
     color: white;
     display: block;
     font-family: 'Raleway', sans-serif;
     max-width: 630px;
     margin: auto;
 }
+
+.bio-text {
+    line-height: 1.4em;
+    padding: 10px;
+}
+
 .card {
     display: block;
 }
