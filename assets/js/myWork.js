@@ -31,6 +31,15 @@ let myWork = {
                 "others can watch the game and chat in comments. The game tracks each players status, selections, " + 
                 "and wins using Firebase. The players and the visitors can all communicate through the provided chat " + 
                 "feature. The chat allows users to select unique colors for their username and chat text."
+        },
+        {
+            image: "assets/images/JiffyGif.PNG",
+            name: "JiffyGif",
+            proj_url: "https://github.com/lewis00001/Giphy_API",
+            hosted_url: "https://lewis00001.github.io/Giphy_API/",
+            description: "A basic gif search API page. Allows users to select number of results, and ratings. Searches " + 
+            "are automatically added to the searches section. Searches can be added and removed from the favorites section. " + 
+            "Results are returned with the gif name and rating information."
         }
     ]
 };

@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     $(".modal").hide();
-    
+
     homeScreen();
     // loads homescreen when link is clicked
     $("#home").on("click", function () {
@@ -15,7 +15,17 @@ $(document).ready(function () {
         $(".link-0").addClass("active-link");
         $(".bio, .work, .contact, .tools").hide();
         $(".home").show();
-
+        for (let i = 0; i < quotes.q.length; i++) {
+            $(".home").append("<div class='card bloom'>" +
+            "<p class='quotes'>" +
+                "<span class='quoteMarks'>\"</span>" + quotes.q[i].quote + 
+                "<span class='quoteMarks'>\"</span>" +
+                "<br>" + 
+                "<span class='qName'>" + quotes.q[i].source + 
+                "</span>" + 
+            "</p>" + 
+            "</div>");
+        }
         $(".home").prepend("<div class='section-title bloom'>about lewis</div>");
     }
 
@@ -120,7 +130,7 @@ $(document).ready(function () {
                 $(".modal-links").append("<a href='" + modalInfo.proj_url + "' target='_blank'" +
                     "<div class='proj-url m-link'>GitHub Repo</div></a>");
                 $(".modal-links").append("<a href='" + modalInfo.hosted_url + "' target='_blank'" +
-                    "<div class='hosted-url m-link'>GitHub Repo</div></a>");
+                    "<div class='hosted-url m-link'>Hosted Site</div></a>");
             }
         }
     }
