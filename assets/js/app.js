@@ -58,13 +58,37 @@ $(document).ready(function () {
         $(".bio").prepend("<div class='section-title bloom'>biography</div>");
     });
 
-    //
+    // generates the contact page/form 
     $("#contact").on("click", function () {
         $(".contact").html("");
         $(".link-0, .link-1, .link-2, .link-4").removeClass("active-link");
         $(".link-3").addClass("active-link");
         $(".home, .work, .bio, .tools").hide();
         $(".contact").show();
+        // output information 
+        $(".contact").html("<div class='logos'></div>");
+        for (let i = 0; i < logos.l.length; i++) {
+            $(".logos").append(
+                "<div class='logo bloom'>" + 
+                    "<a href='" + logos.l[i].link + "' target='_blank'>" + 
+                        "<i class='fab " + logos.l[i].logo + "'></i>" + 
+                    "</a>" + 
+                "</div>"
+            );
+        }
+        $(".contact").append("<div class='contact-form'>" + 
+            "<form class='form bloom' action=''>" +
+                "<label class='form-e' for='f-name'>First Name</label>" + 
+                "<input class='form-e' type='text' id='fname' name='firstname' placeholder='first name'>" + 
+                "<label class='form-e' for='lname'>Last Name</label>" + 
+                "<input class='form-e' type='text' id='lname' name='lastname' placeholder='last name..'>" + 
+                "<label class='form-e' for='email'>E-mail</label>" + 
+                "<input class='form-e' type='email' id='email' name='email' placeholder='you@email.com'>" + 
+                "<label class='form-e' for='message'>Subject</label>" + 
+                "<textarea class='form-e text-area' id='message' name='message' placeholder='message ... '></textarea>" + 
+                "<input class='form-button' type='submit' value='Submit'>" + 
+            "</form>" + 
+        "</div>");
 
         $(".contact").prepend("<div class='section-title bloom'>contact me</div>");
     });
