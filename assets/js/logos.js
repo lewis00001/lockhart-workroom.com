@@ -1,6 +1,6 @@
 let logos = {
     l: [{
-            link: "https://www.linkedin.com/in/e-lewis-lockhart",
+            link: "https://github.com/lewis00001",
             logo: "fa-github-square"
         },
         {
