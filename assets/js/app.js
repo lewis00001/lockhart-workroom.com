@@ -84,13 +84,13 @@ $(document).ready(function () {
                 "</div>" +         
         "</div>"); 
         $(".contact").append("<div class='contact-form'>" + 
-            "<form class='form bloom' action=''>" +
+            "<form class='form bloom' action='sendEmail.php' method='post'>" +
                 "<label class='form-e' for='f-name'>First Name</label>" + 
                 "<input class='form-e' type='text' id='fname' name='firstname' placeholder='first name'>" + 
                 "<label class='form-e' for='lname'>Last Name</label>" + 
                 "<input class='form-e' type='text' id='lname' name='lastname' placeholder='last name..'>" + 
                 "<label class='form-e' for='email'>E-mail</label>" + 
-                "<input class='form-e' type='email' id='email' name='email' placeholder='you@email.com'>" + 
+                "<input class='form-e' type='email' id='email' name='from' placeholder='you@email.com'>" + 
                 "<label class='form-e' for='message'>Subject</label>" + 
                 "<textarea class='form-e text-area' id='message' name='message' placeholder='message ... '></textarea>" + 
                 "<input class='form-button' type='submit' value='Submit'>" + 
