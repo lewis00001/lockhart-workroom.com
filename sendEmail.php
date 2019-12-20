@@ -7,5 +7,5 @@
     $message = $_POST['message'];
     $headers = "From:" . $from;
     mail($to, $subject, $message, $headers);
-    echo "<div class='e-conf'><div class='e-text'>The email message was sent.</div><a href='http://lockhart-workroom.com'><div class='e-button'>Return</a></div>";
+    echo "<div class='e-conf' style='><div class='e-text'>The email message was sent.</div><a href='http://lockhart-workroom.com'><div class='e-button'>Return</a></div>";
 ?>
