@@ -536,6 +536,29 @@ body {
     box-shadow: 0 0 5px black;
 }
 
+.e-conf {
+    margin: auto;
+    margin: 40px;
+    padding: 10px;
+    width: 250px;
+    background-color: rgb(43, 80, 110);
+}
+
+.e-text {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+
+.e-button {
+    font-family: 'Raleway', sans-serif;
+    border: 1px solid black;
+    font-weight: 800;
+    color: black;
+    font-size: 18px;
+    background-color: gray;
+}
+
 
 @media only screen and (min-width: 415px) {
 

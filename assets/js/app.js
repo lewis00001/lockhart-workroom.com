@@ -88,7 +88,7 @@ $(document).ready(function () {
                 "<label class='form-e' for='email'>E-mail</label>" + 
                 "<input class='form-e' type='email' id='email' name='from' placeholder='your@email.com'>" +
                 "<label class='form-e' for='subject'>Subject</label>" + 
-                "<input class='form-e' type='text' id='subject' name='subjecte' placeholder='email subject line'>" +  
+                "<input class='form-e' type='text' id='subject' name='subject' placeholder='email subject line'>" +  
                 "<label class='form-e' for='message'>Message</label>" + 
                 "<textarea class='form-e text-area' id='message' name='message' placeholder='message ... '></textarea>" + 
                 "<input class='form-button' type='submit' value='Submit'>" + 
