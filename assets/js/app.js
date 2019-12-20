@@ -76,6 +76,13 @@ $(document).ready(function () {
                 "</div>"
             );
         }
+        $(".contact").append("<div class='contact-direct'>" +
+            "<div class='email-d d-pad'>lewis00001@gamil.com</div>" +
+            "<div class='phone-d d-pad'>801-691-2121</div>" +                  
+            "<div class='resume-d d-pad'>" +
+                "<a class='d-pad' href='assets/Resume_L_Lockhart_2020.pdf' target='_blank'>resume: view/download</a>" +
+                "</div>" +         
+        "</div>"); 
         $(".contact").append("<div class='contact-form'>" + 
             "<form class='form bloom' action=''>" +
                 "<label class='form-e' for='f-name'>First Name</label>" + 
@@ -100,7 +107,7 @@ $(document).ready(function () {
         $(".link-4").addClass("active-link");
         $(".home, .work, .bio, .contact").hide();
         $(".tools").show();
-
+        $(".tools").append("<div class='tools-text'>content coming soon</div>")
         $(".tools").prepend("<div class='section-title bloom'>helpful tools</div>");
     });
 

@@ -88,6 +88,38 @@ body {
 
  /* home screen end */
 
+ .contact-direct {
+     width: 300px;
+     line-height: 120%;
+     font-size: 18px;
+     margin: 15px auto 15px auto;
+     text-align: center;
+     font-weight: 800;
+     letter-spacing: 0.1em;
+     font-family: 'Raleway', sans-serif;
+ }
+
+ .d-pad {
+    padding: 4px;
+ }
+
+ .resume-d > a {
+     color: black;
+ }
+
+ .resume-d {
+     color: black;
+     border: 1px solid black;
+     margin: 10px;
+     padding: 10px;
+ }
+
+ .resume-d:hover > a {
+    text-shadow: 0 0 3px white;
+    cursor: pointer;
+    font-weight: 900;
+ }
+
 .header {
     height: 10em;
     width: auto;
@@ -114,6 +146,15 @@ body {
     letter-spacing: 0.05em;
     display: flex;
     justify-content: center;
+}
+
+.tools-text {
+    text-align: center;
+    font-size: 22px;
+    color: black;
+    padding: 10px;
+    margin: 30px;
+    border: 1px solid black;
 }
 
 .hr-flex {
