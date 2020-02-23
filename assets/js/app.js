@@ -44,6 +44,7 @@ $(document).ready(function () {
         }
         $(".work").prepend("<div class='section-title bloom'>featured work</div>");
     });
+    
     // other work
     $("#work").on("click", function () {
         $(".work-other").html("");

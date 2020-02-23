@@ -329,6 +329,10 @@ body {
     padding: 8px;
 }
 
+.work-o:hover {
+    background-color: #111;
+}
+
 .work-img {
     box-shadow: 0 0 4px 1px black;
     width: 100%;
