@@ -13,7 +13,7 @@ $(document).ready(function () {
         $(".home").html("");
         $(".link-1, .link-2, .link-3, .link-4").removeClass("active-link");
         $(".link-0").addClass("active-link");
-        $(".bio, .work, .contact, .tools").hide();
+        $(".bio, .work, .work-other, .contact, .tools").hide();
         $(".home").show();
         for (let i = 0; i < quotes.q.length; i++) {
             $(".home").append("<div class='card bloom'>" +
@@ -42,7 +42,18 @@ $(document).ready(function () {
                 html: "<div class='w-title'>" + myWork.w[i].name + "</div>",
             }).css("background-image", "url('" + myWork.w[i].image + "')").appendTo(".work");
         }
-        $(".work").prepend("<div class='section-title bloom'>recent work</div>");
+        $(".work").prepend("<div class='section-title bloom'>featured work</div>");
+    });
+    // other work
+    $("#work").on("click", function () {
+        $(".work-other").html("");
+        $(".home, .bio, .contact, .tools").hide();
+        $(".work-other").show();
+        $(".work-other").append("<div class='section-title bloom w-o'>other work</div>");
+        for (let i = 0; i < myWorkOther.w.length; i++) {
+            $(".work-other").append("<a href='" + myWorkOther.w[i].link +
+            "'><div class='work-o'>" + myWorkOther.w[i].name + "</div></a>");
+        }
     });
 
     //
@@ -50,7 +61,7 @@ $(document).ready(function () {
         $(".bio").html("");
         $(".link-0, .link-1, .link-3, .link-4").removeClass("active-link");
         $(".link-2").addClass("active-link");
-        $(".home, .work, .contact, .tools").hide();
+        $(".home, .work, .work-other, .contact, .tools").hide();
         $(".bio").show();
         for (let i = 0; i < quotes.bio.length; i++) {
             $(".bio").append("<div class='bio-text bloom'>" + quotes.bio[i] + "</div>");
@@ -63,7 +74,7 @@ $(document).ready(function () {
         $(".contact").html("");
         $(".link-0, .link-1, .link-2, .link-4").removeClass("active-link");
         $(".link-3").addClass("active-link");
-        $(".home, .work, .bio, .tools").hide();
+        $(".home, .work, .work-other, .bio, .tools").hide();
         $(".contact").show();
         // output information 
         $(".contact").html("<div class='logos'></div>");
@@ -103,7 +114,7 @@ $(document).ready(function () {
         $(".tools").html("");
         $(".link-0, .link-1, .link-2, .link-3").removeClass("active-link");
         $(".link-4").addClass("active-link");
-        $(".home, .work, .bio, .contact").hide();
+        $(".home, .work, .work-other, .bio, .contact").hide();
         $(".tools").show();
         $(".tools").append("<div class='tools-text'>content coming soon</div>")
         $(".tools").prepend("<div class='section-title bloom'>helpful tools</div>");

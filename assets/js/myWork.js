@@ -40,6 +40,16 @@ let myWork = {
             description: "A basic gif search API page. Allows users to select number of results, and ratings. Searches " + 
             "are automatically added to the searches section. Searches can be added and removed from the favorites section. " + 
             "Results are returned with the gif name and rating information."
+        },
+        {
+            image: "assets/images/tempic.PNG",
+            name: "Tempic",
+            proj_url: "https://github.com/lewis00001/tempic",
+            hosted_url: "https://lewis00001.github.io/tempic/",
+            description: "Five images will be presented to the user randomly from a list of 20 possible cities. " + 
+            "The user will need to order them by coldest to warmest. They will have a limited number of tries to " +
+            "get it correct. Current temperatures will be obtained via a weather API. General information about each " + 
+            "city will be provided by a wiki API and available to the user via an additional information button."
         }
     ]
 };
