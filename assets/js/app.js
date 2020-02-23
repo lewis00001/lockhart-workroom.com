@@ -44,7 +44,7 @@ $(document).ready(function () {
         }
         $(".work").prepend("<div class='section-title bloom'>featured work</div>");
     });
-    
+
     // other work
     $("#work").on("click", function () {
         $(".work-other").html("");
@@ -53,7 +53,7 @@ $(document).ready(function () {
         $(".work-other").append("<div class='section-title bloom w-o'>other work</div>");
         for (let i = 0; i < myWorkOther.w.length; i++) {
             $(".work-other").append("<a href='" + myWorkOther.w[i].link +
-            "'><div class='work-o'>" + myWorkOther.w[i].name + "</div></a>");
+            "' target='_blank'><div class='work-o'>" + myWorkOther.w[i].name + "</div></a>");
         }
     });
 
