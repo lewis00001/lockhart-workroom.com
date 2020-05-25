@@ -152,9 +152,11 @@ body {
     text-align: center;
     font-size: 22px;
     color: black;
-    padding: 10px;
-    margin: 30px;
+    padding: 30px;
+    margin: 30px auto 0 auto;
     border: 1px solid black;
+    max-width: 700px;
+    line-height: 1.5em;
 }
 
 .hr-flex {

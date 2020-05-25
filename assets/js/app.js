@@ -117,7 +117,7 @@ $(document).ready(function () {
         $(".link-4").addClass("active-link");
         $(".home, .work, .work-other, .bio, .contact").hide();
         $(".dev").show();
-        $(".dev").append("<div class='tools-text'>HTML, JavaScript, CSS, Bootstrap, jQuery, Firebase, Node.js, Express.js, React.js, MongoDB, MySQL, API, Command Line, Git'</div>")
+        $(".dev").append("<div class='tools-text'>HTML, JavaScript, CSS, Bootstrap, jQuery, Firebase, Node.js, Express.js, React.js, MongoDB, MySQL, API, Command Line, Git</div>")
         $(".dev").prepend("<div class='section-title bloom'>languages and frameworks</div>");
     });
 
