@@ -13,7 +13,7 @@ $(document).ready(function () {
         $(".home").html("");
         $(".link-1, .link-2, .link-3, .link-4").removeClass("active-link");
         $(".link-0").addClass("active-link");
-        $(".bio, .work, .work-other, .contact, .tools").hide();
+        $(".bio, .work, .work-other, .contact, .dev").hide();
         $(".home").show();
         for (let i = 0; i < quotes.q.length; i++) {
             $(".home").append("<div class='card bloom'>" +
@@ -34,7 +34,7 @@ $(document).ready(function () {
         $(".work").html("");
         $(".link-0, .link-2, .link-3, .link-4").removeClass("active-link");
         $(".link-1").addClass("active-link");
-        $(".home, .bio, .contact, .tools").hide();
+        $(".home, .bio, .contact, .dev").hide();
         $(".work").show();
         for (let i = 0; i < myWork.w.length; i++) {
             $("<div/>", {
@@ -48,7 +48,7 @@ $(document).ready(function () {
     // other work
     $("#work").on("click", function () {
         $(".work-other").html("");
-        $(".home, .bio, .contact, .tools").hide();
+        $(".home, .bio, .contact, .dev").hide();
         $(".work-other").show();
         $(".work-other").append("<div class='section-title bloom w-o'>other work</div>");
         for (let i = 0; i < myWorkOther.w.length; i++) {
@@ -62,7 +62,7 @@ $(document).ready(function () {
         $(".bio").html("");
         $(".link-0, .link-1, .link-3, .link-4").removeClass("active-link");
         $(".link-2").addClass("active-link");
-        $(".home, .work, .work-other, .contact, .tools").hide();
+        $(".home, .work, .work-other, .contact, .dev").hide();
         $(".bio").show();
         for (let i = 0; i < quotes.bio.length; i++) {
             $(".bio").append("<div class='bio-text bloom'>" + quotes.bio[i] + "</div>");
@@ -75,7 +75,7 @@ $(document).ready(function () {
         $(".contact").html("");
         $(".link-0, .link-1, .link-2, .link-4").removeClass("active-link");
         $(".link-3").addClass("active-link");
-        $(".home, .work, .work-other, .bio, .tools").hide();
+        $(".home, .work, .work-other, .bio, .dev").hide();
         $(".contact").show();
         // output information 
         $(".contact").html("<div class='logos'></div>");
@@ -89,7 +89,7 @@ $(document).ready(function () {
             );
         }
         $(".contact").append("<div class='contact-direct'>" +
-            "<div class='email-d d-pad'>lewis00001@gamil.com</div>" +
+            "<div class='email-d d-pad'>lewis00001@gmail.com</div>" +
             "<div class='phone-d d-pad'>801-691-2121</div>" +                  
             "<div class='resume-d d-pad'>" +
                 "<a class='d-pad' href='assets/Resume_L_Lockhart_2020.pdf' target='_blank'>resume: view/download</a>" +
@@ -111,14 +111,14 @@ $(document).ready(function () {
     });
 
     //
-    $("#tools").on("click", function () {
-        $(".tools").html("");
+    $("#dev").on("click", function () {
+        $(".dev").html("");
         $(".link-0, .link-1, .link-2, .link-3").removeClass("active-link");
         $(".link-4").addClass("active-link");
         $(".home, .work, .work-other, .bio, .contact").hide();
-        $(".tools").show();
-        $(".tools").append("<div class='tools-text'>content coming soon</div>")
-        $(".tools").prepend("<div class='section-title bloom'>helpful tools</div>");
+        $(".dev").show();
+        $(".dev").append("<div class='dev-text'>content coming soon</div>")
+        $(".dev").prepend("<div class='section-title bloom'>helpful dev</div>");
     });
 
     // listens for which work is clicked on / calls modal

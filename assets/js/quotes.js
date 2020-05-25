@@ -32,7 +32,7 @@ let quotes = {
         }
     ],
     bio: [
-        "I am looking for an entry-level position as a full-stack web developer or a QAA engineer. I've spent " + 
+        "I am looking for a position as a full-stack web developer or a QAA engineer. I've spent " + 
         "the last six years working at a SaaS company called Simplifile where we provide e-recording services " + 
         "for documents such as deeds and mortgages.",
 
