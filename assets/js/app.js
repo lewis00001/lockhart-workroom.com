@@ -46,16 +46,16 @@ $(document).ready(function () {
     });
 
     // other work
-    $("#work").on("click", function () {
-        $(".work-other").html("");
-        $(".home, .bio, .contact, .dev").hide();
-        $(".work-other").show();
-        $(".work-other").append("<div class='section-title bloom w-o'>other work</div>");
-        for (let i = 0; i < myWorkOther.w.length; i++) {
-            $(".work-other").append("<a href='" + myWorkOther.w[i].link +
-            "' target='_blank'><div class='work-o'>" + myWorkOther.w[i].name + "</div></a>");
-        }
-    });
+    // $("#work").on("click", function () {
+    //     $(".work-other").html("");
+    //     $(".home, .bio, .contact, .dev").hide();
+    //     $(".work-other").show();
+    //     $(".work-other").append("<div class='section-title bloom w-o'>other work</div>");
+    //     for (let i = 0; i < myWorkOther.w.length; i++) {
+    //         $(".work-other").append("<a href='" + myWorkOther.w[i].link +
+    //         "' target='_blank'><div class='work-o'>" + myWorkOther.w[i].name + "</div></a>");
+    //     }
+    // });
 
     //
     $("#bio").on("click", function () {

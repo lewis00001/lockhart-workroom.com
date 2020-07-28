@@ -1,16 +1,14 @@
 let myWork = {
     w: [{
-            image: "assets/images/battlePuffs.PNG",
-            name: "Battle Puffs",
-            proj_url: "https://github.com/lewis00001/BattlePuffs",
-            hosted_url: "https://lewis00001.github.io/BattlePuffs/",
+            image: "assets/images/plumpinsPage.PNG",
+            name: "Plumpin's Page",
+            proj_url: "https://github.com/lewis00001/plumpins_page_main",
+            hosted_url: "https://lewis00001.github.io/plumpins_page_main/index.html",
             description: "Dev: jQuery, Javascript, CSS, HTML :: " + 
-                "Battle Puffs features four cute puffs, from which " + 
-                "the player selects one to battle with. The selected puff will need to " + 
-                "battle the remaining three to win the game. Each stat and name is generated " + 
-                "randomly to add diversity to the game play. The selected puff's attack grows " + 
-                "stronger as it battles the others. Choose your puff and the order you battle " + 
-                "the enemies wisely to win the game."
+                "Plumpin's Page has some fun things. An art making page where a user " + 
+                "can create designs with dots or squares. It also features a memory game " + 
+                "which is pretty challenging. The site is aimed at kids or whoever wants " +
+                "to have a little fun."
         },
         {
             image: "assets/images/glyphTrivia.PNG",
@@ -25,15 +23,17 @@ let myWork = {
                 "the number of questions that ran out of time."
         },
         {
-            image: "assets/images/RPS.PNG",
-            name: "Rock, Paper, Scissors",
-            proj_url: "https://github.com/lewis00001/P.R.S",
-            hosted_url: "https://lewis00001.github.io/P.R.S/",
-            description: "Dev: Firebase, jQuery, Javascript, CSS, HTML :: " +
-                "This rock, paper, scissors game allows two players to lock in a position while " + 
-                "others can watch the game and chat in comments. The game tracks each players status, selections, " + 
-                "and wins using Firebase. The players and the visitors can all communicate through the provided chat " + 
-                "feature. The chat allows users to select unique colors for their username and chat text."
+            image: "assets/images/battlePuffs.PNG",
+            name: "Battle Puffs",
+            proj_url: "https://github.com/lewis00001/BattlePuffs",
+            hosted_url: "https://lewis00001.github.io/BattlePuffs/",
+            description: "Dev: jQuery, Javascript, CSS, HTML :: " + 
+                "Battle Puffs features four cute puffs, from which " + 
+                "the player selects one to battle with. The selected puff will need to " + 
+                "battle the remaining three to win the game. Each stat and name is generated " + 
+                "randomly to add diversity to the game play. The selected puff's attack grows " + 
+                "stronger as it battles the others. Choose your puff and the order you battle " + 
+                "the enemies wisely to win the game."
         },
         {
             image: "assets/images/JiffyGif.PNG",
@@ -44,6 +44,17 @@ let myWork = {
                 "A basic gif search API page. Allows users to select number of results, and ratings. Searches " + 
                 "are automatically added to the searches section. Searches can be added and removed from the favorites section. " + 
                 "Results are returned with the gif name and rating information."
+        },
+        {
+            image: "assets/images/RPS.PNG",
+            name: "Rock, Paper, Scissors",
+            proj_url: "https://github.com/lewis00001/P.R.S",
+            hosted_url: "https://lewis00001.github.io/P.R.S/",
+            description: "Dev: Firebase, jQuery, Javascript, CSS, HTML :: " +
+                "This rock, paper, scissors game allows two players to lock in a position while " + 
+                "others can watch the game and chat in comments. The game tracks each players status, selections, " + 
+                "and wins using Firebase. The players and the visitors can all communicate through the provided chat " + 
+                "feature. The chat allows users to select unique colors for their username and chat text."
         },
         {
             image: "assets/images/tempic.PNG",
